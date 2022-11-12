@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+
+    <style>
+      @font-face {
+        font-family: "Epilogue";
+        src: url("../assets/fonts/Epilogue-Black.ttf");
+        font-weight: 900;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Epilogue";
+        src: url("../assets/fonts/Epilogue-Regular.ttf");
+        font-weight: 400;
+        font-display: swap;
+      }
+    </style>
+
+    <link href="../css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button data-effect="fadeInUp" data-run-once class="button button-primary animonItem">Button</button>
+    <include src="./src/html/sections/footer.html"></include>
+
+    <script type="module" src="../js/index.ts"></script>
+    <script type="text/javascript" src="../js/animon.js"></script>
+  </body>
+</html>
+
+<!--
+  <include src="src/html/components/influencer-card.html" locals='{
+            "influencer": "Léo Duff",
+            "img": "../assets/img/leo.png",
+            "role": "#High-Tech",
+            "offset": "16",
+            "delay": "500",
+            "link": "https://www.youtube.com/c/leoduff",
+            "label": "voir le profil"
+        }'></include>
+ 
+        {{ offset === 'true' ? 'flex flex-col lg:justify-end' : '' }}
+-->

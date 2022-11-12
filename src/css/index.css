@@ -1,0 +1,10 @@
+@import "./ui-kit/buttons.css";
+@import "./ui-kit/texts.css";
+@import "./animon.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply font-black text-4xl text-warning;
+}
