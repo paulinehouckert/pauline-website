@@ -9,7 +9,7 @@
 /* button primary */
 
 .button-primary {
-  @apply text-primary-300 rounded-full border-2 border-primary-300 font-black;
+  @apply text-primary-300 dark:text-main-200 rounded-full border-2 border-primary-300 dark:border-main-200 font-black;
 
   &:hover {
     @apply bg-primary-300 text-white ease-in-out duration-500;
@@ -22,6 +22,10 @@
 
 .button-icon {
   @apply gap-4;
+
+  path {
+    @apply text-primary-300 dark:text-main-200;
+  }
 }
 
 /* Link */

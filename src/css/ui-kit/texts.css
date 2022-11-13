@@ -1,9 +1,16 @@
 body * {
-  @apply text-primary-300 font-epilogue font-normal dark:text-white text-base;
+  @apply text-primary-300 font-epilogue font-normal text-base;
+}
+
+p,
+a,
+div,
+span {
+  @apply dark:text-main-200;
 }
 
 .heading {
-  @apply font-black leading-tight;
+  @apply font-black leading-tight dark:text-main-200;
 }
 
 .heading-1 {
