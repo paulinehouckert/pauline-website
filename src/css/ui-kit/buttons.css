@@ -11,29 +11,33 @@
 .button-primary {
   @apply text-primary-300 dark:text-main-200 rounded-full border-2 border-primary-300 dark:border-main-200 font-black;
 
-  &:hover {
-    @apply bg-primary-300 text-white ease-in-out duration-500;
-  }
-
   &:disabled {
     @apply opacity-25;
   }
 }
 
 .button-icon {
-  @apply gap-4;
+  @apply gap-3;
+
+  svg {
+    @apply transition ease-in-out duration-500;
+  }
 
   path {
     @apply text-primary-300 dark:text-main-200;
+  }
+
+  &:hover svg {
+    @apply translate-x-2 transition ease-in-out duration-500;
   }
 }
 
 /* Link */
 
 .link {
-  @apply text-primary-300 underline underline-offset-[8px] decoration-2 font-black ease-in-out duration-500;
+  @apply text-primary-300 dark:text-main-200 underline underline-offset-[8px] decoration-2 font-black transition ease-in-out duration-500;
 
   &:hover {
-    @apply opacity-75 ease-in-out duration-500;
+    @apply opacity-75 transition ease-in-out duration-500;
   }
 }
