@@ -32,12 +32,15 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        sm: "14px",
+        sm: "15px",
         base: "18px",
         lg: "32px",
         xl: "40px",
-        "2xl": "64px",
+        "xl-mobile": "26px",
+        "2xl": "48px",
+        "2xl-mobile": "36px",
         "3xl": "115px",
+        "3xl-mobile": "48px",
       },
     },
   },

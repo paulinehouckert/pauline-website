@@ -1,5 +1,5 @@
 body * {
-  @apply text-primary-300 font-epilogue font-normal text-base;
+  @apply text-primary-300 font-epilogue font-normal text-sm lg:text-base;
 }
 
 p,
@@ -14,13 +14,13 @@ span {
 }
 
 .heading-1 {
-  @apply text-3xl;
+  @apply text-3xl-mobile lg:text-3xl;
 }
 
 .heading-2 {
-  @apply text-2xl;
+  @apply text-2xl-mobile lg:text-2xl;
 }
 
 .heading-3 {
-  @apply text-xl;
+  @apply text-xl-mobile lg:text-xl;
 }
