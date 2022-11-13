@@ -1,10 +1,11 @@
 @import "./ui-kit/buttons.css";
 @import "./ui-kit/texts.css";
+@import "./ui-kit/grid.css";
 @import "./animon.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  @apply font-black text-4xl text-warning;
+body {
+  @apply bg-background p-5 grid gap-5;
 }

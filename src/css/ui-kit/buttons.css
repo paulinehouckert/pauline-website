@@ -1,5 +1,5 @@
 .button {
-  @apply inline-flex gap-5 items-center justify-center py-3 px-10 text-base transition ease-in-out duration-700;
+  @apply inline-flex gap-5 items-center justify-center py-2 px-5 text-base transition ease-in-out duration-500;
 
   &:disabled {
     @apply opacity-50 cursor-not-allowed;
@@ -9,10 +9,10 @@
 /* button primary */
 
 .button-primary {
-  @apply bg-primary-500 text-white rounded-full border border-transparent font-normal uppercase;
+  @apply text-primary-300 rounded-full border-2 border-primary-300 font-black;
 
   &:hover {
-    @apply bg-white text-main-1000;
+    @apply bg-primary-300 text-white ease-in-out duration-500;
   }
 
   &:disabled {
@@ -20,20 +20,16 @@
   }
 }
 
-/* button secondary */
+.button-icon {
+  @apply gap-4;
+}
 
-.button-secondary {
-  @apply bg-white text-main-1000 rounded-full border border-transparent font-normal uppercase;
+/* Link */
 
-  a {
-    @apply ease-in-out duration-500;
-  }
+.link {
+  @apply text-primary-300 underline underline-offset-[8px] decoration-2 font-black ease-in-out duration-500;
 
-  a:hover {
-    @apply text-primary-500;
-  }
-
-  &:disabled {
-    @apply opacity-25;
+  &:hover {
+    @apply opacity-75 ease-in-out duration-500;
   }
 }

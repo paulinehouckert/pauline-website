@@ -1,0 +1,19 @@
+.column {
+  @apply rounded-xl p-10;
+}
+
+.column--full {
+  @apply w-full;
+}
+
+.column--half {
+  @apply w-1/2;
+}
+
+.column--one-third {
+  @apply w-1/3;
+}
+
+.column--two-third {
+  @apply w-2/3;
+}
