@@ -47,3 +47,5 @@ const animon = (selector = ".animonItem") => {
     nodes.forEach((node) => node.classList.add("is-visible"));
   }
 };
+
+export { animon };
