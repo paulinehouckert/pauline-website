@@ -1,4 +1,6 @@
-<div class="column column--one-third bg-white lg:py-24">
+<div data-effect="fadeInUp" data-run-once data-delay="200"
+id="projects"
+class="column column--one-third bg-white lg:py-24 animonItem">
     <h2 class="heading heading-2">Mes<br>projets</h2>
 </div>
 
@@ -7,7 +9,8 @@
     "logo": "../assets/img/logo-mn.svg",
     "url": "url",
     "img": "../assets/img/main-img-mn.png",
-    "reverse": "false"
+    "reverse": "false",
+    "delay": "500"
 }'></include>
 
 <include src="./src/html/components/project-card.html" locals='{
@@ -15,12 +18,14 @@
     "logo": "../assets/img/logo-valf.svg",
     "url": "url",
     "img": "../assets/img/main-img-valf.png",
-    "reverse": "true"
+    "reverse": "true",
+    "delay": "200"
 }'></include>
 
-<div class="column column--one-third bg-white flex flex-col justify-between items-center">
+<div data-effect="fadeInUp" data-run-once data-delay="500"
+class="column column--one-third bg-main-200 lg:bg-white flex flex-col justify-between items-center animonItem">
     <img src="../assets/img/logo-bs.svg" alt="Logo Blackswan">
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin lectus lectus, nec ultrices erat tincidunt quis.</p>
+    <p class="text-center my-10 lg:my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin lectus lectus, nec ultrices erat tincidunt quis.</p>
     <div class="flex justify-between items-baseline w-full">
         <div class="flex gap-3">
             <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,11 +33,12 @@
             </svg>
             <p>SHOPIFY</p>
         </div>
-        <a class="link self-end" href="{{ url }}" target="_blank">Découvrir</a>
+        <a data-effect="fadeIn" data-run-once class="link self-end animonItem" href="{{ url }}" target="_blank">Découvrir</a>
     </div>
 </div>
 
-<div class="column column--one-third bg-white flex flex-col justify-between items-center">
+<div data-effect="fadeInUp" data-run-once data-delay="200"
+class="column column--one-third bg-white flex flex-col justify-between items-center animonItem">
     <div class="flex justify-center">
         <div class="flex gap-3">
             <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +47,15 @@
             <p>WORDPRESS</p>
         </div>
     </div>
-    <img src="../assets/img/logo-bs.svg" alt="Logo Blackswan">
+    <img class="my-10 lg:my-0" src="../assets/img/logo-bs.svg" alt="Logo Blackswan">
     <a class="link self-end" href="{{ url }}" target="_blank">Découvrir</a>
 </div>
+
+<include src="./src/html/components/project-card.html" locals='{
+    "cms": "shopify",
+    "logo": "../assets/img/logo-lcf.svg",
+    "url": "url",
+    "img": "../assets/img/main-img-mn.png",
+    "reverse": "false",
+    "delay": "500"
+}'></include>

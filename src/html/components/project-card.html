@@ -4,9 +4,11 @@
     - "url": url
     - "img": assets
     - "reverse": bolean
+    - "delay": "number"
 -->
 
-<div class="column column--two-third bg-main-100 overflow-hidden flex relative p-0 min-h-auto lg:min-h-[500px] {{ reverse === 'true' ? 'flex-row-reverse' : '' }}">
+<div data-effect="fadeInUp" data-run-once data-delay="{{ delay }}"
+class="column column--two-third bg-main-100 overflow-hidden flex relative p-0 min-h-auto lg:min-h-[500px] {{ reverse === 'true' ? 'flex-row-reverse' : '' }} animonItem">
     <div class="w-2/3 flex flex-col justify-between items-center px-5 py-10 lg:p-10">
         <div class="flex gap-3 {{ cms === 'shopify' ? 'block' : 'hidden' }}">
             <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +28,7 @@
             <img class="w-36 lg:w-72 py-10" src="{{ logo }}" alt="Logo Maison Nicole">
         </div>
 
-        <a class="link self-end" href="{{ url }}" target="_blank">Découvrir</a>
+        <a data-effect="fadeIn" data-run-once class="link self-end animonItem" href="{{ url }}" target="_blank">Découvrir</a>
 
         
 
